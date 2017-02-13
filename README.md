@@ -32,3 +32,7 @@ $ m720-config
 ## Create your own configuration
 
 Tweak the source code in `m720_config/__init__.py` to adjust the configuration.
+
+## Check your configuration
+
+Use `xev | grep button` to monitor your changes to your mouse button mapping.
