@@ -36,3 +36,7 @@ Tweak the source code in `m720_config/__init__.py` to adjust the configuration.
 ## Check your configuration
 
 Use `xev | grep button` to monitor your changes to your mouse button mapping.
+
+# How to Get Gestures On Linux?
+
+You can use [Easystroke](https://github.com/thjaeger/easystroke/wiki) to add gesture support to your mouse. Use the thumb button as your gesture button and the behavior should be similar to that created by Logitech Options.
