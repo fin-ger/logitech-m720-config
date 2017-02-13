@@ -23,7 +23,7 @@ from os import path
 here = path.abspath (path.dirname (__file__))
 
 # Get the long description from the README.rst file
-with open (path.join (here, "README.rst"), encoding = "utf-8") as readme:
+with open (path.join (here, "README.md"), encoding = "utf-8") as readme:
     long_description = readme.read ()
 
 setup (
