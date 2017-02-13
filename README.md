@@ -8,3 +8,27 @@ The configuration is done via the HID++ protocol described in these documents:
  * [special keys and mouse buttons](https://lekensteyn.nl/files/logitech/x1b04_specialkeysmsebuttons.html#divertedButtonsEvent)
 
 This script is created for personal use only and may or may not work for your device. Use at your own risk.
+
+# How to Use
+
+## Installation
+
+Clone the repository and install this package with pip:
+
+```
+$ pip install --user -e /path/to/logitech-m720-config
+```
+
+## Run the script
+
+This script will map `Button 8` on the thumb button by default.
+
+Run in a terminal:
+
+```
+$ m720-config
+```
+
+## Create your own configuration
+
+Tweak the source code in `m720_config/__init__.py` to adjust the configuration.
