@@ -19,6 +19,8 @@ Clone the repository and install this package with pip:
 $ pip install --user -e /path/to/logitech-m720-config
 ```
 
+This installs `m720-config` to `~/.local/bin`.
+
 ## Run the script
 
 This script will map `Button 8` on the thumb button by default.
@@ -28,6 +30,8 @@ Run in a terminal:
 ```
 $ m720-config
 ```
+
+> Make sure `~/.local/bin` is in your `PATH` variable
 
 ## Create your own configuration
 
