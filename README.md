@@ -21,6 +21,18 @@ $ pip install --user -e /path/to/logitech-m720-config
 
 This installs `m720-config` to `~/.local/bin`.
 
+### Troubleshooting
+
+On `ubuntu` the above installation might fail due to a different `PYTHONPATH` configuration. You may use the following *workaround* (use with caution, it is a hack!)
+
+```
+$ sudo apt-get install python3-pip
+$ cd path-to-this-repo
+$ PYTHONPATH="./lib" pip3 install --user -e .
+$ pip3 install --user pyudev
+$ ~/.local/bin/m720-config
+```
+
 ## Run the script
 
 This script will map `Button 8` on the thumb button by default.
