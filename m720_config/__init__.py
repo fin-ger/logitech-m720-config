@@ -23,6 +23,7 @@ from logitech_receiver import Receiver
 class SpecialKeysMseButtons:
     def __init__ (self):
         device_info = next (r for r in receivers () if r.product_id == "c52b")
+        print(device_info)
         assert device_info
 
         self.receiver = Receiver.open (device_info)
