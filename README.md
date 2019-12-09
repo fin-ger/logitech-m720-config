@@ -47,7 +47,7 @@ $ m720-config
 
 ## Create your own configuration
 
-Tweak the source code in `m720_config/__init__.py` to adjust the configuration. Specifically, the remapping is done in [line 155 of `__init__.py`](https://github.com/fin-ger/logitech-m720-config/blob/master/m720_config/__init__.py#L155).
+Tweak the source code in `m720_config/__init__.py` to adjust the configuration. Specifically, the remapping is done in [line 156 of `__init__.py`](https://github.com/fin-ger/logitech-m720-config/blob/master/m720_config/__init__.py#L156).
 
 ### So, how does it work?
 
