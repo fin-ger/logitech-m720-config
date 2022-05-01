@@ -22,8 +22,15 @@ from logitech_receiver import Receiver
 
 class SpecialKeysMseButtons:
     def __init__ (self):
+        print("### CURRENTLY CONNECTED DEVICES ###")
+        print("     path     vendor_id product_id serial release manufacturer product interface driver               bus_id isDevice")
+        for recv in receivers():
+            print (
+                f"{recv.path!s:<13} {recv.vendor_id!s:<9} {recv.product_id!s:<10} {recv.serial!s:<6} {recv.release!s:<7} {recv.manufacturer!s:<12} {recv.product!s:<7} {recv.interface!s:<9} {recv.driver!s:<20} {recv.bus_id!s:<6} {recv.isDevice!s:<8}"
+            )
+        print()
+
         device_info = next (r for r in receivers () if r.product_id.lower() == "c52b")
-        print(device_info)
         assert device_info
 
         self.receiver = Receiver.open (device_info)
