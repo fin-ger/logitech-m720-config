@@ -91,7 +91,7 @@ If you just want to remap your mouse buttons, leave the other parameters as is. 
 
 ## Check your configuration
 
-Use `xev | grep button` to monitor your changes to your mouse button mapping.
+Use `xev -event button` to monitor your changes to your mouse button mapping.
 
 # How to Get Gestures On Linux?
 
